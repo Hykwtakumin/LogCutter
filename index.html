@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>ChromeLogCutter</title>
+      <script type="text/javascript" src="app.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+      <style type="text/css">
+      <!--
+          h1 {
+              font-family: 'Oswald', sans-serif;
+              }
+
+          .scroll {
+            overflow: scroll;
+            width: 75%;
+            height: 800px;
+            color: #bdc3c7;
+            font-family: 'Source Code Pro', ;
+            background-color: hsl(0, 0%, 15%);
+          }
+      -->
+      </style>
+  </head>
+  <body>
+    <h1>ChromeLogCutter</h1>
+
+      <input type="file" accept='.txt,.log' id="targetTextFiles" size="50">
+      <input type="button" value="読込" onClick="getTextFile('utf-8')">
+
+    <hr>
+      <input type="button" value="INFO" onClick="cuti()">
+      <input type="button" value="DEBUG" onClick="()">
+      <input type="button" value="WARN" onClick="()">
+      <input type="button" value="ERROR" onClick="()">
+      <input type="button" value="VERBOSE" onClick="()">
+    <hr>
+        <p id="guttext" class="scroll">
+          </p>
+
+        </pre>
+  </body>
+</html>
